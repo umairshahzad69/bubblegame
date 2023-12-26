@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#page{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: rgb(79, 64, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 80%;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.ptop{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(3, 5, 128);
+    display: flex;
+    padding: 0 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+.elem{
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+}
+.box{
+    background: #fff;
+    height: 30px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: rgb(20, 32, 138);
+    font-weight: 800;
+    border-radius: 5px;
+}
+.pbtm{
+    height: calc(100% - 60px);
+    width: 100%;
+    /* background: #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+.bubble{
+    height: 30px;
+    width: 30px;
+    background: rgb(6, 32, 223);
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+.bubble:hover{
+    background-color: rgb(6, 2, 86);
+    color: white;
+    cursor: pointer;
+}
+@media (max-width:768px){
+    .ptop{
+        padding: 5px 10px;
+        height: 50px;
+    }
+    .ptop h2{
+        font-size: 15px;
+    }
+    .box{
+        height: 25px;
+        width: 25px;
+        font-size: 15px;
+    }
+    .pbtm{
+        padding: 5px;
+        overflow: scroll;
+    }
+}
